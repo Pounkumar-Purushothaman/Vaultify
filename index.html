@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaultify | Secure Card Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark: #121212;
+            --teal: #64FFDA;
+            --gray: #2A2A2A;
+            --text-main: #FFFFFF;
+            --text-dim: #A0A0A0;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: var(--teal);
+            margin: 0;
+        }
+
+        .tagline {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            color: var(--teal);
+            font-size: 2rem;
+            border-left: 4px solid var(--teal);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--gray);
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border: 1px solid var(--teal);
+        }
+
+        .feature-card h3 {
+            color: var(--teal);
+            margin-top: 0;
+        }
+
+        .privacy-content {
+            background: #1A1A1A;
+            padding: 30px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .privacy-content h4 {
+            color: var(--text-main);
+            margin-top: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--gray);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--teal);
+            color: var(--dark);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        .nav a:hover {
+            color: var(--teal);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <a href="#features">Features</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="mailto:pounkumar.purushothaman@gmail.com">Support</a>
+        </div>
+
+        <header>
+            <h1 class="logo">VAULTIFY</h1>
+            <p class="tagline">Secure Your Digital Wallet with Military-Grade Encryption</p>
+            <a href="#" class="btn">Get it on Google Play</a>
+        </header>
+
+        <section id="features" class="section">
+            <h2>Premium Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>3D Tilt Effects</h3>
+                    <p>Experience a stunning interactive UI with realistic 3D motion as you move your phone.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>NFC Scanning</h3>
+                    <p>Add contactless cards instantly by simply tapping them against the back of your device.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cloud Sync</h3>
+                    <p>Securely backup and restore your encrypted vault via your private Google Drive storage.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Smart Reminders</h3>
+                    <p>Never miss a payment. Get automated notifications for your credit card bill due dates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="privacy" class="section">
+            <h2>Privacy Policy</h2>
+            <div class="privacy-content">
+                <p><strong>Effective Date: August 16, 2026</strong></p>
+                <p>Vaultify ("we," "us," or "our") is committed to protecting your privacy. This policy explains how we handle your data.</p>
+
+                <h4>1. Information Collection and Use</h4>
+                <p>Vaultify is an offline-first secure vault. All card details (numbers, CVV, expiry dates) are encrypted and stored locally on your device. We do not have access to your personal financial data.</p>
+
+                <h4>2. Data Security (AES-256)</h4>
+                <p>Your information is protected using industry-standard AES-256 bit encryption. Your encryption keys are stored in the Android Keystore system, isolated from the rest of the OS.</p>
+
+                <h4>3. Google Drive Sync</h4>
+                <p>If you enable cloud sync, your data is stored in a hidden app-specific folder on your own Google Drive. Vaultify cannot see other files in your Drive, and other apps cannot see Vaultify's data.</p>
+
+                <h4>4. Third-Party Services</h4>
+                <p>We use AdMob for advertisements and Firebase Crashlytics for stability reporting. These services may collect anonymous device identifiers.</p>
+
+                <h4>5. Data Deletion</h4>
+                <p>You can delete all your data instantly by removing cards within the app or clearing the application data in your Android settings.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Vaultify. All rights reserved.<br>
+            Developed by Pounkumar Purushothaman</p>
+        </footer>
+    </div>
+
+</body>
+</html>
